@@ -1,10 +1,11 @@
 package ru.netology.domain;
+
 import java.util.Objects;
 
 public class Smartphone extends Product {
     private String maker;
 
-    public Smartphone(){
+    public Smartphone() {
 
     }
 
@@ -24,6 +25,7 @@ public class Smartphone extends Product {
     public void setMaker(String maker) {
         this.maker = maker;
     }
+
     @Override
     public boolean matches(String search) {
         if (getName().contains(search)) {

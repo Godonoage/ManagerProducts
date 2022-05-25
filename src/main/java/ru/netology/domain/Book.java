@@ -1,10 +1,11 @@
 package ru.netology.domain;
+
 import java.util.Objects;
 
 public class Book extends Product {
     private String author;
 
-    public Book(){
+    public Book() {
 
     }
 
@@ -24,6 +25,7 @@ public class Book extends Product {
     public void setAuthor(String author) {
         this.author = author;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -56,5 +58,5 @@ public class Book extends Product {
                 '}';
     }
 
-    }
+}
 

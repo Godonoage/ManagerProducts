@@ -54,6 +54,7 @@ class ProductManagerTest {
         Product[] actual = manager.searchBy("Гарри Поттер и филосовский камень");
         assertArrayEquals(expected, actual);
     }
+
     @Test
     void shouldFindByNameSmartphone() {
         Product[] expected = new Product[]{secondSmart};
@@ -88,6 +89,7 @@ class ProductManagerTest {
         Product[] actual = manager.searchBy("Something");
         assertArrayEquals(expected, actual);
     }
+
     @Test
     void shouldReturnTrueOnBook() {
         assertTrue(firstBook.matches("Финансист"));
